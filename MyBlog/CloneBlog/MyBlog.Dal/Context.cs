@@ -10,10 +10,11 @@ namespace MyBlog.Dal
 {
     public class Context:DbContext
     {
-        public Context(DbContextOptions<Context> db): base(db)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
+            optionsBuilder.UseSqlServer("Server=localhost;Database=MyBlog;Trusted_Connection=True;");
         }
+      
         public DbSet<About> Abouts { get; set; }
         public DbSet<Blog> Blogs { get; set; } 
         public DbSet<Category> Categories { get; set; }

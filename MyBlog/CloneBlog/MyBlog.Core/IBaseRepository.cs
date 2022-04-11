@@ -9,7 +9,12 @@ namespace MyBlog.Core
 {
     public interface IBaseRepository<T> where T : class
     {
-        DbSet<T> Set();
+        bool Create(T entity);
+        bool Update(T entity);
+        bool Delete(T entity);
+        T Find(int id);
         List<T> List();
+        DbSet<T> Set();
+        IQueryable<T> Get();
     }
 }
