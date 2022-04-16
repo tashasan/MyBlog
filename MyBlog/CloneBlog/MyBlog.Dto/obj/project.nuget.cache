@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1v8J/lwpsPKy4R12+ml1mJAL89trRl73v1VNtjK5p/1NMEJzm9Ty0+OYH8MhgBugfFWIcekEiDVAKjtXJQVcPQ==",
+  "dgSpecHash": "v5YsrggKk5NjFNw4iOcK7RuR7MU2hzIeG60CbY1fmFqCe8/dW0j6bvUUqUjImV4ulJgzsAg8YcUS3YD5OG7a7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.Dto\\MyBlog.Dto.csproj",
+  "projectFilePath": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Dto\\MyBlog.Dto.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tkkYaj8dWAB1Vj4rhX7ad9UixPHIsAiF9XSb/FudmlTTZW3xBVEbNBZvuNvxkadi8sdoR30AmmMDiQLvYsvVeA==",
+  "dgSpecHash": "kZ5WoQsgeYHn/aWlds7YUckPPZAD2VXxsNm6GyUrf2ZEVvL6svVKB26mRsZfUpfjIQ2eZs7hbNVAShOPeaR1FQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.UoW\\MyBlog.UoW.csproj",
+  "projectFilePath": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.UoW\\MyBlog.UoW.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hasan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\hasan\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

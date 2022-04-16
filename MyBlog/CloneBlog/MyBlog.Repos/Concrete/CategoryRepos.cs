@@ -16,5 +16,30 @@ namespace MyBlog.Repos.Concrete
         {
 
         }
+
+        public void CategoryAdd(Category category)
+        {
+            Set().Add(category);
+        }
+
+        public void CategoryDelete(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CategoryUpdate(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Category GetCategoryById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Category> GetCategoryList()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

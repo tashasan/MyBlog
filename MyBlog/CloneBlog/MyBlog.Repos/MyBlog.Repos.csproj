@@ -10,4 +10,8 @@
     <ProjectReference Include="..\MyBlog.Core\MyBlog.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ValidationRules\" />
+  </ItemGroup>
+
 </Project>

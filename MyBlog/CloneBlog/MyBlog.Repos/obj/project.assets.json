@@ -1826,11 +1826,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.Repos\\MyBlog.Repos.csproj",
+      "projectUniqueName": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Repos\\MyBlog.Repos.csproj",
       "projectName": "MyBlog.Repos",
-      "projectPath": "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.Repos\\MyBlog.Repos.csproj",
+      "projectPath": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Repos\\MyBlog.Repos.csproj",
       "packagesPath": "C:\\Users\\hasan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.Repos\\obj\\",
+      "outputPath": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Repos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1847,8 +1847,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.Core\\MyBlog.Core.csproj": {
-              "projectPath": "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.Core\\MyBlog.Core.csproj"
+            "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Core\\MyBlog.Core.csproj": {
+              "projectPath": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Core\\MyBlog.Core.csproj"
             }
           }
         }
@@ -1877,7 +1877,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

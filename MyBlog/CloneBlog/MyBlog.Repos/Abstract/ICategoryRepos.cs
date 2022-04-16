@@ -10,5 +10,10 @@ namespace MyBlog.Repos.Abstract
 {
     public interface ICategoryRepos:IBaseRepository<Category>
     {
+        void CategoryAdd(Category category);
+        void CategoryDelete(Category category);
+        void CategoryUpdate(Category category);
+        List<Category> GetCategoryList();
+        Category GetCategoryById(int id);
     }
 }

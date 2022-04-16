@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DC7WXYsp3kSZ9zQLALNxYHlkAnhlGTRyQf5sSHQB9KqmHoXgTjyJjL1GoDRWllBtvGTuPUuZZiwXI9aGhdcplw==",
+  "dgSpecHash": "QbFP2/rVhCBMHNkVLS2i6jMq+639mkD8zu5NyVjeTvM5RCskE/QYDY+3Vl5xxeyCd6ufocKrbdtZW5uCuoY0SA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hasan\\Documents\\MyBlog\\CloneBlog\\MyBlog.Core\\MyBlog.Core.csproj",
+  "projectFilePath": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Core\\MyBlog.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hasan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hasan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
