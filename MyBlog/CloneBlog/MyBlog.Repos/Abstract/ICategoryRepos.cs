@@ -1,4 +1,5 @@
 ﻿using MyBlog.Core;
+using MyBlog.Dto;
 using MyBlog.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace MyBlog.Repos.Abstract
         void CategoryAdd(Category category);
         void CategoryDelete(Category category);
         void CategoryUpdate(Category category);
-        List<Category> GetCategoryList();
+        List<CategoryListDto> GetCategoryList();
         Category GetCategoryById(int id);
     }
 }

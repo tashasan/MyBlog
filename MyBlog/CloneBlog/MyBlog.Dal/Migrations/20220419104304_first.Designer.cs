@@ -12,7 +12,7 @@ using MyBlog.Dal;
 namespace MyBlog.Dal.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220409113047_first")]
+    [Migration("20220419104304_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -90,6 +90,9 @@ namespace MyBlog.Dal.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
@@ -100,6 +103,8 @@ namespace MyBlog.Dal.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Blogs");
                 });
@@ -142,6 +147,9 @@ namespace MyBlog.Dal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("BlogId")
+                        .HasColumnType("int");
+
                     b.Property<string>("CommentContent")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -164,6 +172,8 @@ namespace MyBlog.Dal.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BlogId");
 
                     b.ToTable("Comments");
                 });
@@ -246,6 +256,38 @@ namespace MyBlog.Dal.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Writers");
+                });
+
+            modelBuilder.Entity("MyBlog.Entities.Concrete.Blog", b =>
+                {
+                    b.HasOne("MyBlog.Entities.Concrete.Category", "Category")
+                        .WithMany("Blogs")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("MyBlog.Entities.Concrete.Comment", b =>
+                {
+                    b.HasOne("MyBlog.Entities.Concrete.Blog", "Blogs")
+                        .WithMany("Comments")
+                        .HasForeignKey("BlogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Blogs");
+                });
+
+            modelBuilder.Entity("MyBlog.Entities.Concrete.Blog", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("MyBlog.Entities.Concrete.Category", b =>
+                {
+                    b.Navigation("Blogs");
                 });
 #pragma warning restore 612, 618
         }

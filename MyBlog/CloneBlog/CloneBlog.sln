@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Ui", "MyBlog.Ui\MyBlog.Ui.csproj", "{6AE38871-9113-4BC1-A128-B4CB6D29ECEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Ui", "MyBlog.Ui\MyBlog.Ui.csproj", "{6AE38871-9113-4BC1-A128-B4CB6D29ECEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Core", "MyBlog.Core\MyBlog.Core.csproj", "{213386CB-C5E9-4CF7-A3C7-D8BE60DCFA5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Core", "MyBlog.Core\MyBlog.Core.csproj", "{213386CB-C5E9-4CF7-A3C7-D8BE60DCFA5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Dal", "MyBlog.Dal\MyBlog.Dal.csproj", "{A9385EE1-8027-44D9-98D4-441DCAE75C45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Dal", "MyBlog.Dal\MyBlog.Dal.csproj", "{A9385EE1-8027-44D9-98D4-441DCAE75C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Repos", "MyBlog.Repos\MyBlog.Repos.csproj", "{60E7E7DC-6FA4-4826-A82B-D82CFAF0604A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Repos", "MyBlog.Repos\MyBlog.Repos.csproj", "{60E7E7DC-6FA4-4826-A82B-D82CFAF0604A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.UoW", "MyBlog.UoW\MyBlog.UoW.csproj", "{3089545F-E52A-4E4F-A555-E501B1037068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.UoW", "MyBlog.UoW\MyBlog.UoW.csproj", "{3089545F-E52A-4E4F-A555-E501B1037068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Dto", "MyBlog.Dto\MyBlog.Dto.csproj", "{8BB4EB0E-3B83-4DD1-9094-7F9FACCA12F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Dto", "MyBlog.Dto\MyBlog.Dto.csproj", "{8BB4EB0E-3B83-4DD1-9094-7F9FACCA12F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Entities", "MyBlog.Entities\MyBlog.Entities.csproj", "{0F7BCE69-237A-47FB-8B96-7D126417AADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Entities", "MyBlog.Entities\MyBlog.Entities.csproj", "{0F7BCE69-237A-47FB-8B96-7D126417AADF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

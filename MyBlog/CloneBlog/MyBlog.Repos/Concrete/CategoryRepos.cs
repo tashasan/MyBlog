@@ -1,5 +1,6 @@
 ﻿using MyBlog.Core;
 using MyBlog.Dal;
+using MyBlog.Dto;
 using MyBlog.Entities.Concrete;
 using MyBlog.Repos.Abstract;
 using System;
@@ -12,9 +13,10 @@ namespace MyBlog.Repos.Concrete
 {
     public class CategoryRepos:BaseRepository<Category>,ICategoryRepos
     {
+        
         public CategoryRepos(Context db):base(db)
         {
-
+            
         }
 
         public void CategoryAdd(Category category)
@@ -24,7 +26,7 @@ namespace MyBlog.Repos.Concrete
 
         public void CategoryDelete(Category category)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void CategoryUpdate(Category category)
@@ -37,9 +39,16 @@ namespace MyBlog.Repos.Concrete
             throw new NotImplementedException();
         }
 
-        public List<Category> GetCategoryList()
+        public List<CategoryListDto> GetCategoryList()
         {
-            throw new NotImplementedException();
+            return Set().Select(x => new CategoryListDto
+            {
+                Id = x.Id,
+                CategoryName = x.CategoryName,
+                CategoryDescription = x.CategoryDescription,
+                
+
+            }).ToList();
         }
     }
 }
