@@ -12,7 +12,7 @@ namespace MyBlog.Repos.Concrete
 {
     public class WriterRepos:BaseRepository<Writer>,IWriterRepos
     {
-        public WriterRepos(Context db): base(db)
+        public WriterRepos(BlogContext db): base(db)
         {
 
         }

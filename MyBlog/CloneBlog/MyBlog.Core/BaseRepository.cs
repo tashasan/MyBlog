@@ -10,8 +10,8 @@ namespace MyBlog.Core
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        Context _db;
-        public BaseRepository(Context db)
+        BlogContext _db;
+        public BaseRepository(BlogContext db)
         {
             _db = db;
         }

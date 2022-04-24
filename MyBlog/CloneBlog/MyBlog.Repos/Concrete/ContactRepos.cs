@@ -12,7 +12,7 @@ namespace MyBlog.Repos.Concrete
 {
     public class ContactRepos:BaseRepository<Contact>,IContactRepos
     {
-        public ContactRepos(Context db): base(db)
+        public ContactRepos(BlogContext db): base(db)
         {
 
         }

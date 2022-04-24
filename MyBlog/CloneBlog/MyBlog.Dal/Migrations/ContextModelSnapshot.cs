@@ -10,7 +10,7 @@ using MyBlog.Dal;
 
 namespace MyBlog.Dal.Migrations
 {
-    [DbContext(typeof(Context))]
+    [DbContext(typeof(BlogContext))]
     partial class ContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

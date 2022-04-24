@@ -12,7 +12,7 @@ namespace MyBlog.Repos.Concrete
 {
     public class CommentRepos:BaseRepository<Comment>,ICommentRepos
     {
-        public CommentRepos(Context db) :base (db)
+        public CommentRepos(BlogContext db) :base (db)
         {
 
         }

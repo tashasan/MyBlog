@@ -11,7 +11,7 @@ using MyBlog.Dal;
 
 namespace MyBlog.Dal.Migrations
 {
-    [DbContext(typeof(Context))]
+    [DbContext(typeof(BlogContext))]
     [Migration("20220419104304_first")]
     partial class first
     {

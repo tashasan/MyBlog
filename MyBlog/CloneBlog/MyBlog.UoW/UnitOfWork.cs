@@ -10,7 +10,7 @@ namespace MyBlog.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {
-        Context _db;
+        BlogContext _db;
     
 
         public IAboutRepos _aboutRepos { get; private set; }
@@ -25,7 +25,7 @@ namespace MyBlog.UoW
 
         public IWriterRepos _writerRepos { get; private set; }
 
-        public UnitOfWork(Context db,IAboutRepos aboutRepos,IBlogRepos blogRepos,ICategoryRepos categoryRepos,ICommentRepos commentRepos ,IContactRepos contactRepos,IWriterRepos writerRepos)
+        public UnitOfWork(BlogContext db,IAboutRepos aboutRepos,IBlogRepos blogRepos,ICategoryRepos categoryRepos,ICommentRepos commentRepos ,IContactRepos contactRepos,IWriterRepos writerRepos)
         {
             _db = db;
             _aboutRepos = aboutRepos;

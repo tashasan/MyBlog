@@ -12,7 +12,7 @@ namespace MyBlog.Repos.Concrete
 {
     public class AboutRepos:BaseRepository<About>, IAboutRepos
     {
-        public AboutRepos(Context db) : base (db)
+        public AboutRepos(BlogContext db) : base (db)
         {
 
         }

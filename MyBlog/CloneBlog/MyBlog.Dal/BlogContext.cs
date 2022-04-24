@@ -8,18 +8,25 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Dal
 {
-    public class Context:DbContext
+    public class BlogContext:DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=MyBlog;Trusted_Connection=True;");
-        }
-      
+        //public Context(DbContextOptions<Context> op) : base(op)
+        //{
+
+        //}
+
+
         public DbSet<About> Abouts { get; set; }
         public DbSet<Blog> Blogs { get; set; } 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Writer> Writers { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=localhost;Database=MyBlog;Trusted_Connection=True;");
+        }
     }
 }
+

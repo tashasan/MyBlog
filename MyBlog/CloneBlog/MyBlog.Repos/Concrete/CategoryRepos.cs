@@ -14,7 +14,7 @@ namespace MyBlog.Repos.Concrete
     public class CategoryRepos:BaseRepository<Category>,ICategoryRepos
     {
         
-        public CategoryRepos(Context db):base(db)
+        public CategoryRepos(BlogContext db):base(db)
         {
             
         }
