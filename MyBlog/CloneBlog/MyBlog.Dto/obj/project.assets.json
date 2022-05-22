@@ -2737,6 +2737,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "MyBlog.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.3"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Entities.dll": {}
+        }
       }
     }
   },
@@ -8619,11 +8632,17 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "MyBlog.Entities/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Entities/MyBlog.Entities.csproj",
+      "msbuildProject": "../MyBlog.Entities/MyBlog.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.3",
+      "MyBlog.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8652,7 +8671,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Entities\\MyBlog.Entities.csproj": {
+              "projectPath": "C:\\Users\\hasan\\Documents\\GitHub\\MyBlog\\MyBlog\\CloneBlog\\MyBlog.Entities\\MyBlog.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

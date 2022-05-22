@@ -3049,7 +3049,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.3",
+          "MyBlog.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MyBlog.Dto.dll": {}

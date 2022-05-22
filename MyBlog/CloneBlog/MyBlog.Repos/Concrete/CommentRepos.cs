@@ -1,5 +1,6 @@
 ﻿using MyBlog.Core;
 using MyBlog.Dal;
+using MyBlog.Dto;
 using MyBlog.Entities.Concrete;
 using MyBlog.Repos.Abstract;
 using System;
@@ -15,6 +16,23 @@ namespace MyBlog.Repos.Concrete
         public CommentRepos(BlogContext db) :base (db)
         {
 
+        }
+
+   
+
+        public List<CommentListDto> GetCommentList(int id)
+        {
+            return Set().Select(x => new CommentListDto
+            {
+                Id = x.Id,
+                CommentContent = x.CommentContent,
+                CommentTitle = x.CommentTitle,
+                CommentUserName = x.CommentUserName,
+                BlogId=x.BlogId,
+                
+
+
+            }).Where(x => x.Id == id).ToList();
         }
     }
 }

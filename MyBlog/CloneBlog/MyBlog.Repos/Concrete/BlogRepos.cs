@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Repos.Concrete
 {
-    public class BlogRepos:BaseRepository<Blog>,IBlogRepos
+    public class BlogRepos : BaseRepository<Blog>, IBlogRepos
     {
-        public BlogRepos(BlogContext db): base(db)
+        public BlogRepos(BlogContext db) : base(db)
         {
 
         }
@@ -25,12 +25,21 @@ namespace MyBlog.Repos.Concrete
                 Id = x.Id,
                 Title = x.BlogTitle,
                 Date = x.Date,
-                CategoryName = x.Category.CategoryName,
+                CategoryName = x.Categories.CategoryName,
                 BlogImage = x.BlogImage,
                 Description = x.BlogContent,
+                CategoryId = x.CategoryId,
+                CommentList = x.Comments.Select(a => new CommentListDto
+                {
+                    Id = a.Id,
+                    BlogId = a.BlogId,
+                    CommentContent = a.CommentContent,
+                    CommentTitle = a.CommentTitle
 
+                }).ToList(),
+                
 
-            }).ToList();
+            }).Where(x => x.Id == id).ToList();
         }
 
         public List<BlogListDto> GetBlogList()
@@ -38,11 +47,12 @@ namespace MyBlog.Repos.Concrete
             return Set().Select(x => new BlogListDto
             {
                 Id = x.Id,
-                Title=x.BlogTitle,
-                Date=x.Date,
-                CategoryName=x.Category.CategoryName,
-                BlogImage=x.BlogImage,
-                Description=x.BlogContent,
+                Title = x.BlogTitle,
+                Date = x.Date,
+                CategoryName = x.Categories.CategoryName,
+                BlogImage = x.BlogImage,
+                Description = x.BlogContent,
+
 
 
             }).ToList();

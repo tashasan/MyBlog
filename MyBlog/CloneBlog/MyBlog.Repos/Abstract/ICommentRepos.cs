@@ -1,4 +1,5 @@
 ﻿using MyBlog.Core;
+using MyBlog.Dto;
 using MyBlog.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,7 @@ namespace MyBlog.Repos.Abstract
 {
     public interface ICommentRepos:IBaseRepository<Comment>
     {
+        List<CommentListDto> GetCommentList(int id);
+       
     }
 }

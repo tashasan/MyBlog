@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,7 @@ namespace MyBlog.Dto
         public string CategoryName { get; set; }
         public string BlogImage { get; set; }
         public string Description { get; set; }
+        public List<CommentListDto> CommentList { get; set; }
+        public int CategoryId { get; set; }
     }
 }

@@ -14,6 +14,6 @@ namespace MyBlog.Entities.Concrete
         public string CategoryName { get; set; }
         public string CategoryDescription { get; set; }
 
-        public ICollection<Blog> Blogs { get; set; }
+        public Blog Blogs { get; set; }
     }
 }

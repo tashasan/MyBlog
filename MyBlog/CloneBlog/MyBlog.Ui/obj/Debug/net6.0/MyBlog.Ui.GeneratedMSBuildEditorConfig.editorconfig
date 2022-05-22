@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hasan\Documents\GitHub\MyBlog\MyBlog\CloneBlog\MyBlog.Ui
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Blog/BlogDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nRGV0YWlscy5jc2h0bWw=
+[C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Blog/BlogReadMore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nUmVhZE1vcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Blog/Index.cshtml]
@@ -27,12 +27,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Comment/PartialAddComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxQYXJ0aWFsQWRkQ29tbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Shared/Components/CommentListByBlog/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RCeUJsb2dcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hasan/Documents/GitHub/MyBlog/MyBlog/CloneBlog/MyBlog.Ui/Views/Shared/Error.cshtml]
