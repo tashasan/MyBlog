@@ -3,6 +3,7 @@ using MyBlog.Dal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,6 +50,11 @@ namespace MyBlog.Core
         public List<T> GetList()
         {
             return Set().ToList();
+        }
+
+        public List<T> GetList(Expression<Func<T, bool>> filter)
+        {
+            return _db.Set<T>().Where(filter).ToList();
         }
     }
 }

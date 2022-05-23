@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyBlog.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,7 @@ namespace MyBlog.Dto
         public string CommentTitle { get; set; }
         public string CommentContent { get; set; }
         public int BlogId { get; set; }
+        
+      
     }
 }

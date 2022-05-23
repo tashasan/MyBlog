@@ -28,11 +28,15 @@ namespace MyBlog.Repos.Concrete
                 CommentContent = x.CommentContent,
                 CommentTitle = x.CommentTitle,
                 CommentUserName = x.CommentUserName,
-                BlogId=x.BlogId,
-                
-
+                BlogId = x.BlogId,
 
             }).Where(x => x.Id == id).ToList();
+
         }
+        public List<Comment> GetCList(int id)
+        {
+            return GetList(x => x.Blog.Id == id);
+        }
+        
     }
 }

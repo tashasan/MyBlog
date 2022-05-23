@@ -23,6 +23,7 @@ namespace MyBlog.Ui.Controllers
         {
             ViewBag.Id = id;
             var res = _uow._blogRepos.GetBlogDetailList(id);
+            
             return View(res);
             
         }

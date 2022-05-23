@@ -12,6 +12,8 @@ namespace MyBlog.Repos.Abstract
     public interface ICommentRepos:IBaseRepository<Comment>
     {
         List<CommentListDto> GetCommentList(int id);
-       
+        List<Comment> GetCList(int id);
+
+
     }
 }

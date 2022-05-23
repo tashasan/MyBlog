@@ -57,5 +57,10 @@ namespace MyBlog.Repos.Concrete
 
             }).ToList();
         }
+
+        public List<Blog> GetBlogById(int id)
+        {
+            return GetList(x => x.Id == id);
+        }
     }
 }

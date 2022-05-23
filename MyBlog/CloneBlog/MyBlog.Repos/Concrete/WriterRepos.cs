@@ -16,5 +16,9 @@ namespace MyBlog.Repos.Concrete
         {
 
         }
+        public void WriterAdd(Writer writer)
+        {
+            Insert(writer);
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace MyBlog.Entities.Concrete
         }
 
         public string WriterName { get; set; }
+        public string WriterLastName { get; set; }
         public string WriterAbout { get; set; }
         public string WriterImage { get; set; }
         public string WriterMail { get; set; }

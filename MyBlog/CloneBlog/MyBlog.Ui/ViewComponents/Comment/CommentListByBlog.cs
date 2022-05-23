@@ -14,7 +14,7 @@ namespace MyBlog.Ui.ViewComponents.Comment
 
         public IViewComponentResult Invoke(int id)
         {
-            return View(_uow._commentRepos.GetCommentList(id));
+            return View(_uow._commentRepos.GetCList(id));
         }
     }  
 }

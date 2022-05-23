@@ -24,7 +24,7 @@ namespace MyBlog.Ui.Controllers
         public PartialViewResult CommentListByBlog(int id)
         {
             
-            return PartialView(_uow._commentRepos.GetCommentList(id));
+            return PartialView(_uow._commentRepos.GetCList(id));
         }
     }
 }
