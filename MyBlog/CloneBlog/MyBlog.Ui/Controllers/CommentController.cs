@@ -19,6 +19,7 @@ namespace MyBlog.Ui.Controllers
 
         public PartialViewResult PartialAddComment()
         {
+            _uow.Save();
             return PartialView();
         }   
         public PartialViewResult CommentListByBlog(int id)

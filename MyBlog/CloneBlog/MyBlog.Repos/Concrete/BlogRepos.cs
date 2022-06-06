@@ -20,26 +20,26 @@ namespace MyBlog.Repos.Concrete
 
         public List<BlogListDto> GetBlogDetailList(int id)
         {
-            return Set().Select(x => new BlogListDto
-            {
-                Id = x.Id,
-                Title = x.BlogTitle,
-                Date = x.Date,
-                CategoryName = x.Categories.CategoryName,
-                BlogImage = x.BlogImage,
-                Description = x.BlogContent,
-                CategoryId = x.CategoryId,
-                CommentList = x.Comments.Select(a => new CommentListDto
+                return Set().Select(x => new BlogListDto
                 {
-                    Id = a.Id,
-                    BlogId = a.BlogId,
-                    CommentContent = a.CommentContent,
-                    CommentTitle = a.CommentTitle
+                    Id = x.Id,
+                    Title = x.BlogTitle,
+                    Date = x.Date,
+                    CategoryName = x.Categories.CategoryName,
+                    BlogImage = x.BlogImage,
+                    Description = x.BlogContent,
+                    CategoryId = x.CategoryId,
+                    CommentList = x.Comments.Select(a => new CommentListDto
+                    {
+                        Id = a.Id,
+                        BlogId = a.BlogId,
+                        CommentContent = a.CommentContent,
+                        CommentTitle = a.CommentTitle
 
-                }).ToList(),
+                    }).ToList(),
                 
 
-            }).Where(x => x.Id == id).ToList();
+                }).Where(x => x.Id == id).ToList();
         }
 
         public List<BlogListDto> GetBlogList()
@@ -54,13 +54,17 @@ namespace MyBlog.Repos.Concrete
                 Description = x.BlogContent,
 
 
-
             }).ToList();
         }
 
         public List<Blog> GetBlogById(int id)
         {
-            return GetList(x => x.Id == id);
+            return GetList(x => x.Writers.Id == id);
+        }
+
+        public List<Blog> GetBlogListByWriter(int id)
+        {
+            return GetList(x=>x.WriterId==id);
         }
     }
 }

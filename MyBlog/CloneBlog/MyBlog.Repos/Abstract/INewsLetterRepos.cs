@@ -1,5 +1,4 @@
 ﻿using MyBlog.Core;
-using MyBlog.Dto;
 using MyBlog.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -9,9 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Repos.Abstract
 {
-    public interface IWriterRepos: IBaseRepository<Writer>
+    public interface INewsLetterRepos: IBaseRepository<NewsLetter>
     {
-        
-
     }
 }

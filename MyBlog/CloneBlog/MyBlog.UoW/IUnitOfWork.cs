@@ -14,7 +14,8 @@ namespace MyBlog.UoW
         IBlogRepos _blogRepos { get; }
         ICommentRepos _commentRepos { get; }
         IContactRepos _contactRepos { get; }
-        IWriterRepos _writerRepos { get; }
+        IWriterRepos _writerRepos { get; }  
+        INewsLetterRepos _newsLetterRepos { get; }
         void Save();
     }
 }

@@ -27,6 +27,7 @@ namespace MyBlog.Entities.Concrete
         public Writer Writers { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
+       
 
         
 

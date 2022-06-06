@@ -21,6 +21,7 @@ namespace MyBlog.UoW.Extensions
             services.AddScoped<ICommentRepos, CommentRepos>();
             services.AddScoped<IContactRepos, ContactRepos>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<INewsLetterRepos, NewsLetterRepos>();
             
             return services;
         }

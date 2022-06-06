@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyBlog.Dal;
 
@@ -11,9 +12,10 @@ using MyBlog.Dal;
 namespace MyBlog.Dal.Migrations
 {
     [DbContext(typeof(BlogContext))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20220606093921_refresh")]
+    partial class refresh
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -220,26 +222,6 @@ namespace MyBlog.Dal.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("MyBlog.Entities.Concrete.NewsLetter", b =>
-                {
-                    b.Property<int>("MailId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MailId"), 1L, 1);
-
-                    b.Property<string>("Mail")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("MailStatus")
-                        .HasColumnType("bit");
-
-                    b.HasKey("MailId");
-
-                    b.ToTable("NewsLetters");
-                });
-
             modelBuilder.Entity("MyBlog.Entities.Concrete.Writer", b =>
                 {
                     b.Property<int>("Id")
@@ -307,13 +289,13 @@ namespace MyBlog.Dal.Migrations
 
             modelBuilder.Entity("MyBlog.Entities.Concrete.Comment", b =>
                 {
-                    b.HasOne("MyBlog.Entities.Concrete.Blog", "Blogs")
+                    b.HasOne("MyBlog.Entities.Concrete.Blog", "Blog")
                         .WithMany("Comments")
                         .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Blogs");
+                    b.Navigation("Blog");
                 });
 
             modelBuilder.Entity("MyBlog.Entities.Concrete.Blog", b =>

@@ -17,7 +17,7 @@ namespace MyBlog.Entities.Concrete
         public string CommentContent { get; set; }
         [ForeignKey("Blog")]
         public int BlogId { get; set; }
-        public Blog Blog { get; set; }
+        public Blog Blogs { get; set; }
 
 
     }

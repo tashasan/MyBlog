@@ -14,6 +14,7 @@ namespace MyBlog.Repos.Abstract
         List<BlogListDto> GetBlogList();
         List<BlogListDto> GetBlogDetailList(int id);
        
+        List<Blog> GetBlogListByWriter(int id);
         
     }
 }

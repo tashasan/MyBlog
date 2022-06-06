@@ -35,7 +35,7 @@ namespace MyBlog.Repos.Concrete
         }
         public List<Comment> GetCList(int id)
         {
-            return GetList(x => x.Blog.Id == id);
+            return GetList(x => x.Blogs.Id == id);
         }
         
     }

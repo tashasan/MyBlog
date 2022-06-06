@@ -1,6 +1,5 @@
 ﻿using MyBlog.Core;
 using MyBlog.Dal;
-using MyBlog.Dto;
 using MyBlog.Entities.Concrete;
 using MyBlog.Repos.Abstract;
 using System;
@@ -11,13 +10,11 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Repos.Concrete
 {
-    public class WriterRepos:BaseRepository<Writer>,IWriterRepos
+    public class NewsLetterRepos: BaseRepository<NewsLetter>, INewsLetterRepos
     {
-        public WriterRepos(BlogContext db): base(db)
+        public NewsLetterRepos(BlogContext db) : base(db)
         {
 
         }
-
- 
     }
 }

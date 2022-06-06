@@ -25,7 +25,9 @@ namespace MyBlog.UoW
 
         public IWriterRepos _writerRepos { get; private set; }
 
-        public UnitOfWork(BlogContext db,IAboutRepos aboutRepos,IBlogRepos blogRepos,ICategoryRepos categoryRepos,ICommentRepos commentRepos ,IContactRepos contactRepos,IWriterRepos writerRepos)
+        public INewsLetterRepos _newsLetterRepos { get; private set; }
+
+        public UnitOfWork(BlogContext db,IAboutRepos aboutRepos, IBlogRepos blogRepos, ICategoryRepos categoryRepos, ICommentRepos commentRepos, IContactRepos contactRepos, IWriterRepos writerRepos, INewsLetterRepos newsLetterRepos)
         {
             _db = db;
             _aboutRepos = aboutRepos;
@@ -34,7 +36,7 @@ namespace MyBlog.UoW
             _commentRepos = commentRepos;
             _contactRepos = contactRepos;
             _writerRepos = writerRepos;
-
+            _newsLetterRepos = newsLetterRepos;
         }
 
         public void Save()
